@@ -1,92 +1,89 @@
-# AI Job Hunter
+# 🤖 AI Job Hunter
 
-Automated job discovery pipeline built for continuous cloud operation.
+Autonomous job scraper & Telegram bot for 2026 fresher and internship roles across India.  
+Scrapes 13 portals every 2 hours via GitHub Actions — delivers Top Picks with package info directly to your Telegram.
 
-## What this project does
+## Features
 
-- Scrapes jobs from web sources (Naukri, Internshala, Unstop, Shine, TimesJobs)
-- Ingests Telegram channel jobs when Telegram API credentials are configured
-- Deduplicates and validates jobs before saving
-- Sends Telegram summaries for each completed cycle
-- Supports role-aware filtering through profile configuration
+- **13 Job Portals** — LinkedIn, Naukri, Internshala, Foundit, Wellfound, PlacementDrive, TalentD, JobFound, Shine, TimesJobs, Unstop, Job4Freshers, Free Portals
+- **40 Role Profiles** — Data Analyst, Full Stack, MERN, Python Dev, ML Engineer, Business Analyst, and more
+- **Playwright Stealth** — Bypasses Cloudflare & anti-bot protections on all JS-heavy sites
+- **Gemini AI Scoring** — Each job auto-scored against your fresher profile
+- **Cloud Native** — NeonDB (PostgreSQL) backend, GitHub Actions cron every 2 hours
+- **Telegram Bot** — Chat to query jobs, get Top Picks with salary/package info, apply links
 
-## Core entrypoints
+## Quick Start
 
-- `python main.py`
-  - Runs the role-aware pipeline flow
-  - Best when you want profile-driven filtering and scoring
-
-- `python job_scraper_3hr.py`
-  - Runs continuous scheduler loop
-  - Best for unattended operation
-
-- `python job_scraper_3hr.py --once`
-  - Runs one complete scrape/notify cycle and exits
-  - Used by GitHub Actions scheduled workflow
-
-## Current structure
-
-- `main.py`: role-aware pipeline entrypoint
-- `job_scraper_3hr.py`: continuous scheduler/orchestrator
-- `automation/`: pipeline orchestration logic
-- `config/`: profile and runtime config loader
-- `roles/role_profiles.yaml`: role definitions
-- `scrapers/`: source scrapers, processor, and shared helpers
-- `data_storage/`: generated CSV output
-- `logs/`: runtime logs
-- `docs/`: operational notes and setup docs
-
-## Cloud-first 24/7 setup
-
-Use GitHub Actions (no laptop required):
-
-1. Push this repository to GitHub.
-2. Add repository secrets:
-   - `TELEGRAM_BOT_TOKEN`
-   - `TELEGRAM_CHAT_ID`
-   - Optional: `TELEGRAM_API_ID`, `TELEGRAM_API_HASH`
-3. Confirm workflow exists at:
-   - `.github/workflows/ai-job-hunter.yml`
-4. Let scheduled runs execute automatically.
-
-The workflow runs `python job_scraper_3hr.py --once` on a schedule.
-
-## Local verification commands
-
+### 1. Copy env template
 ```bash
-cd ai-job-automation
-pip install -r requirements.txt
-python3 job_scraper_3hr.py --once
-python3 main.py
+cp .env-analyst.example .env-analyst
+# Fill in your tokens (Telegram, Gemini, NeonDB)
 ```
 
-## Environment notes
+### 2. Install dependencies
+```bash
+pip install -r requirements.txt
+playwright install chromium
+```
 
-Main environment file used in this project:
+### 3. Run locally (single pass)
+```bash
+source .env-analyst
+export PYTHONPATH=$(pwd)
+python main.py --once
+```
 
-- `.env-analyst`
+### 4. Start Telegram Bot
+```bash
+source .env-analyst
+export PYTHONPATH=$(pwd)
+python run_bot.py
+```
 
-Key variables:
+## Cloud Deployment (GitHub Actions)
 
-- `TELEGRAM_BOT_TOKEN`
-- `TELEGRAM_CHAT_ID`
-- `SCRAPE_INTERVAL_MINUTES`
-- Role/profile related variables used by `config/role_loader.py`
+The workflow at `.github/workflows/scraper.yml` runs automatically every 2 hours.
 
-## Troubleshooting
+**Set these GitHub Secrets** (`Settings → Secrets → Actions`):
 
-- If Telegram notifications fail:
-  - Check token/chat ID secrets and bot permissions.
-- If no jobs are returned:
-  - Check scraper source availability and filters.
-- If scheduler appears locked:
-  - Remove stale lock file in `data/` and rerun.
+| Secret | Description |
+|--------|-------------|
+| `TELEGRAM_BOT_TOKEN` | From @BotFather |
+| `TELEGRAM_CHAT_ID` | Your chat ID |
+| `TELEGRAM_API_ID` | From my.telegram.org |
+| `TELEGRAM_API_HASH` | From my.telegram.org |
+| `GEMINI_API_KEY` | From aistudio.google.com |
+| `DATABASE_URL` | NeonDB PostgreSQL URL |
 
-## Status
+Then go to **Actions → Autonomous AI Job Hunter → Run workflow** to trigger manually.
 
-Runtime path validated for:
+## Project Structure
 
-- `job_scraper_3hr.py --once`
-- `main.py`
+```
+ai-job-automation/
+├── main.py                    # Master orchestrator (run all 40 roles)
+├── run_bot.py                 # Telegram bot entry point
+├── requirements.txt
+├── .github/workflows/
+│   └── scraper.yml            # GitHub Actions cron automation
+├── scrapers/                  # 13 individual job portal scrapers
+├── automation/                # Pipeline, scheduling, daily storage
+├── integration/telegram_bot.py # Bot command handlers + AI chat
+├── database/                  # SQLAlchemy models + NeonDB engine
+├── analysis/gemini_scoring.py # AI job scoring
+├── filters/final_filter.py    # ATS filter
+├── roles/role_profiles.yaml   # 40 role definitions
+├── config/role_loader.py
+└── scripts/
+    ├── healthcheck.py
+    ├── migrate_local_to_cloud.py  # SQLite → NeonDB migration
+    └── job_digest_scheduler.py
+```
 
-Both execute successfully with current structure.
+## Stack
+
+- **Python 3.11** · Playwright · BeautifulSoup4 · SQLAlchemy
+- **Database**: NeonDB (PostgreSQL) — free tier, serverless
+- **AI**: Google Gemini (`google-generativeai`)
+- **Bot**: `python-telegram-bot` v20+
+- **CI/CD**: GitHub Actions

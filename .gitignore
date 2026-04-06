@@ -2,6 +2,15 @@
 # AI Job Hunter — .gitignore
 # =============================================================================
 
+# --- Docs & Status Reports (not code) ---
+docs/
+daily_monitoring/
+*.txt
+*.sh
+# Exclude .md except root README
+**/*.md
+!README.md
+
 # --- Secrets & Environment ---
 .env
 .env.*

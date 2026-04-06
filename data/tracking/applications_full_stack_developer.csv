@@ -1,8 +1,0 @@
-role,title,company,link,location,source,score,status,logged_at
-full_stack_developer,Full Stack Developer Internship,Example Linkedin Co.,https://example.com/full_stack_developer/linkedin/1,USA,linkedin,3.4,scraped,2026-03-27T17:03:13.890033+00:00
-full_stack_developer,Junior Full Stack Developer,Example Linkedin Co.,https://example.com/full_stack_developer/linkedin/2,USA,linkedin,3.4,scraped,2026-03-27T17:03:13.890033+00:00
-full_stack_developer,Mern Developer Internship,Example Linkedin Co.,https://example.com/full_stack_developer/linkedin/3,USA,linkedin,3.4,scraped,2026-03-27T17:03:13.890033+00:00
-full_stack_developer,Full Stack Developer,Example Naukri Co.,https://example.com/full_stack_developer/naukri/1,USA,naukri,3.4,scraped,2026-03-27T17:03:13.890033+00:00
-full_stack_developer,Web Developer,Example Naukri Co.,https://example.com/full_stack_developer/naukri/2,USA,naukri,3.4,scraped,2026-03-27T17:03:13.890033+00:00
-full_stack_developer,Full Stack Development,Example Internshala Co.,https://example.com/full_stack_developer/internshala/1,USA,internshala,3.4,scraped,2026-03-27T17:03:13.890033+00:00
-full_stack_developer,Web Development,Example Internshala Co.,https://example.com/full_stack_developer/internshala/2,India,internshala,3.4,scraped,2026-03-27T17:03:13.890033+00:00

@@ -1,30 +1,58 @@
-# Secrets
-*.env
-.env*
-.env-analyst
-.env.local
+# =============================================================================
+# AI Job Hunter — .gitignore
+# =============================================================================
 
-# OS
+# --- Secrets & Environment ---
+.env
+.env.*
+.env-analyst
+*.env
+
+# --- Neon CLI context ---
+.neon
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+*.so
+.Python
+venv/
+env/
+.venv/
+
+# --- Generated data (all runtime output) ---
+data/
+logs/
+*.log
+
+# --- macOS ---
 .DS_Store
+.AppleDouble
+.LSOverride
 Thumbs.db
 
-# Python
-__pycache__/
-*.pyc
-*.egg-info/
-
-# Node
-node_modules/
-
-# Data directories (large/generated files)
-ai-job-automation/data_storage/
-ai-job-automation/logs/
-ai-job-automation/data/
-ai-job-automation/data/runtime/
-ai-job-automation/data/tracking/
-ai-job-automation/data/runs/
-ai-job-automation/data/telegram_bot/
-
-# IDE
+# --- IDE ---
 .vscode/
 .idea/
+*.swp
+*.swo
+
+# --- Node (if any tooling added later) ---
+node_modules/
+
+# --- Debug/temp images ---
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# --- Test cache ---
+.pytest_cache/
+.coverage
+htmlcov/

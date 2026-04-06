@@ -1,0 +1,32 @@
+2026-04-04 01:18:04,013 - INFO - Set default RUN_PROFILE=hourly
+2026-04-04 01:18:04,013 - INFO - Set default TARGET_ROLE=
+2026-04-04 01:18:04,014 - INFO - Set default RUN_TRIGGER=github_actions
+2026-04-04 01:18:04,014 - INFO - Set default ENABLE_AI_INTENT=1
+2026-04-04 01:18:04,015 - INFO - Lock file created
+2026-04-04 01:18:04,039 - INFO - Selected role: data_analyst
+2026-04-04 01:18:04,039 - INFO - Target level: entry
+2026-04-04 01:18:04,039 - INFO - Profile: hourly, Window: 2d, Trigger: github_actions
+2026-04-04 01:18:04,039 - INFO - 🔍 Scraping Naukri.com jobs...
+2026-04-04 01:18:29,075 - INFO - Naukri: All methods exhausted, returning empty
+2026-04-04 01:18:29,076 - WARNING - ⚠️ No jobs returned from naukri; fallback generation disabled
+2026-04-04 01:18:30,345 - INFO - 🔍 Scraping Internshala internships...
+2026-04-04 01:18:31,540 - WARNING - ⚠️ No jobs returned from internshala; fallback generation disabled
+2026-04-04 01:18:32,597 - INFO - 🔍 Scraping Unstop opportunities...
+2026-04-04 01:18:32,597 - INFO - Attempting Unstop API...
+2026-04-04 01:18:35,600 - INFO - Attempting Unstop HTML scraping...
+2026-04-04 01:18:37,008 - INFO - ✅ Found 0 opportunities from Unstop HTML
+2026-04-04 01:18:37,009 - WARNING - ⚠️ No jobs returned from unstop; fallback generation disabled
+2026-04-04 01:18:37,590 - INFO - 🔍 Scraping Shine.com jobs...
+2026-04-04 01:18:41,308 - INFO - ✅ Shine.com: Found 0 REAL jobs
+2026-04-04 01:18:41,309 - WARNING - ⚠️ No jobs returned from shine; fallback generation disabled
+2026-04-04 01:18:42,475 - INFO - 🔍 Scraping TimesJobs.com jobs...
+2026-04-04 01:18:45,874 - INFO - ✅ TimesJobs: Found 0 REAL jobs
+2026-04-04 01:18:45,875 - WARNING - ⚠️ No jobs returned from timesjobs; fallback generation disabled
+2026-04-04 01:18:47,195 - WARNING - No jobs were scraped for the current profile
+2026-04-04 01:18:47,205 - INFO - Saved 0 jobs to data/data_analyst/jobs.csv
+2026-04-04 01:18:47,206 - INFO - Saved summary to data/data_analyst/summary.json
+2026-04-04 01:18:47,207 - INFO - Saved run status to data/run_status_latest.json
+2026-04-04 01:18:47,207 - INFO - ✅ Pipeline completed successfully
+2026-04-04 01:18:47,207 - INFO - Results saved to data/run_status_latest.json
+2026-04-04 01:18:47,208 - INFO - Lock file released
+2026-04-04 01:18:47,208 - INFO - Pipeline finished in 43.19 seconds

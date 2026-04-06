@@ -1,0 +1,16 @@
+{
+  "export_date": "2026-04-05T22:38:49.510255",
+  "total_jobs": 24,
+  "exports": {
+    "All Jobs": "/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/data/sheets_export/01_All_Jobs_20260405_223849.csv",
+    "Summary": "/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/data/sheets_export/00_Summary_20260405_223849.csv",
+    "High Score": "/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/data/sheets_export/02_High_Score_Jobs_20260405_223849.csv",
+    "RemoteOK(12)": "/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/data/sheets_export/04_By_Type_REMOTEOK_12_20260405_223849.csv",
+    "Telegram(1)": "/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/data/sheets_export/04_By_Type_TELEGRAM_1_20260405_223849.csv",
+    "Fallback(11)": "/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/data/sheets_export/04_By_Type_FALLBACK_11_20260405_223849.csv",
+    "Job(18)": "/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/data/sheets_export/04_By_Type_JOB_18_20260405_223849.csv",
+    "Top Companies": "/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/data/sheets_export/05_Top_Companies_20260405_223849.csv",
+    "Stats by Role": "/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/data/sheets_export/06_Stats_By_Role_20260405_223849.csv"
+  },
+  "output_directory": "/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/data/sheets_export"
+}

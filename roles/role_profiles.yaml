@@ -1,0 +1,2149 @@
+default_role: data_analyst
+roles:
+  data_analyst:
+    display_name: Data Analyst
+    target_level: entry
+    description: Jobs for Data Analyst position
+    queries:
+      free_portals:
+      - data analyst
+      - business analyst
+      - junior analyst
+      naukri:
+      - data analyst
+      - business analyst
+      internshala:
+      - data analytics
+      - business analysis
+      unstop:
+      - data analyst
+      - analytics
+      shine:
+      - data analyst
+      - business analyst
+      timesjobs:
+      - data analyst
+      - business analyst
+      linkedin:
+      - data analyst
+      - business analyst
+      foundit:
+      - data analyst
+      - business analyst
+      talentd:
+      - data analyst
+      wellfound:
+      - data analyst
+      placementdrive:
+      - data analyst
+      - analytics
+      jobfound:
+      - data analyst
+      job4freshers:
+      - data analyst
+    target_keywords:
+    - SQL
+    - Python
+    - Excel
+    - Tableau
+    - Power BI
+    - data analysis
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    - On-Site India
+    - Bangalore
+    - Pune
+    - Hyderabad
+    - Remote India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - SQL
+      - Python
+      medium:
+      - Excel
+  business_analyst:
+    display_name: Business Analyst
+    target_level: entry
+    description: Jobs for Business Analyst position
+    queries:
+      free_portals:
+      - business analyst
+      - business analysis
+      - junior analyst
+      naukri:
+      - business analyst
+      - business analysis
+      internshala:
+      - business analyst
+      unstop:
+      - business analyst
+      shine:
+      - business analyst
+      timesjobs:
+      - business analyst
+      linkedin: &id001
+      - business analyst
+      - business analysis
+      foundit: *id001
+      talentd: *id001
+      wellfound: *id001
+      placementdrive: *id001
+      jobfound: *id001
+      job4freshers: *id001
+    target_keywords:
+    - Business Analysis
+    - Requirements
+    - Stakeholder
+    - Process
+    - JIRA
+    - Excel
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Business Analysis
+      - Requirements
+      medium:
+      - Stakeholder
+  sql_developer:
+    display_name: SQL Developer
+    target_level: entry
+    description: Jobs for SQL Developer position
+    queries:
+      free_portals:
+      - sql developer
+      - database developer
+      - junior sql
+      naukri:
+      - sql developer
+      - database developer
+      internshala:
+      - sql
+      - database
+      unstop:
+      - sql developer
+      shine:
+      - sql developer
+      timesjobs:
+      - sql developer
+      linkedin: &id002
+      - sql developer
+      - database developer
+      foundit: *id002
+      talentd: *id002
+      wellfound: *id002
+      placementdrive: *id002
+      jobfound: *id002
+      job4freshers: *id002
+    target_keywords:
+    - SQL
+    - Database
+    - Query
+    - T-SQL
+    - PL-SQL
+    - optimization
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - SQL
+      - Database
+      medium:
+      - Query
+  operations_analyst:
+    display_name: Operations Analyst
+    target_level: entry
+    description: Jobs for Operations Analyst position
+    queries:
+      free_portals:
+      - operations analyst
+      - process analyst
+      - junior operations
+      naukri:
+      - operations analyst
+      - operations
+      internshala:
+      - operations
+      unstop:
+      - operations analyst
+      shine:
+      - operations analyst
+      timesjobs:
+      - operations analyst
+      linkedin: &id003
+      - operations analyst
+      - operations
+      foundit: *id003
+      talentd: *id003
+      wellfound: *id003
+      placementdrive: *id003
+      jobfound: *id003
+      job4freshers: *id003
+    target_keywords:
+    - Operations
+    - Process
+    - Optimization
+    - Excel
+    - Analytics
+    - Data
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Operations
+      - Process
+      medium:
+      - Optimization
+  software_engineer:
+    display_name: Software Engineer
+    target_level: entry
+    description: Jobs for Software Engineer position
+    queries:
+      naukri:
+      - software engineer
+      - software development
+      internshala:
+      - software development
+      unstop:
+      - software engineer
+      shine:
+      - software engineer
+      timesjobs:
+      - software engineer
+      linkedin: &id004
+      - software engineer
+      - software development
+      foundit: *id004
+      talentd: *id004
+      wellfound: *id004
+      placementdrive: *id004
+      jobfound: *id004
+      job4freshers: *id004
+    target_keywords:
+    - Software
+    - Java
+    - Python
+    - C++
+    - development
+    - architecture
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 3
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Software
+      medium:
+      - Java
+      - Python
+  python_developer:
+    display_name: Python Developer
+    target_level: entry
+    description: Jobs for Python Developer position
+    queries:
+      naukri:
+      - python developer
+      - python
+      internshala:
+      - python
+      unstop:
+      - python developer
+      shine:
+      - python developer
+      timesjobs:
+      - python developer
+      linkedin: &id005
+      - python developer
+      - python
+      foundit: *id005
+      talentd: *id005
+      wellfound: *id005
+      placementdrive: *id005
+      jobfound: *id005
+      job4freshers: *id005
+    target_keywords:
+    - Python
+    - Django
+    - Flask
+    - FastAPI
+    - data processing
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Python
+      medium:
+      - Django
+      - Flask
+  java_developer:
+    display_name: Java Developer
+    target_level: entry
+    description: Jobs for Java Developer position
+    queries:
+      naukri:
+      - java developer
+      - java
+      internshala:
+      - java
+      unstop:
+      - java developer
+      shine:
+      - java developer
+      timesjobs:
+      - java developer
+      linkedin: &id006
+      - java developer
+      - java
+      foundit: *id006
+      talentd: *id006
+      wellfound: *id006
+      placementdrive: *id006
+      jobfound: *id006
+      job4freshers: *id006
+    target_keywords:
+    - Java
+    - Spring Boot
+    - microservices
+    - enterprise
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Java
+      medium:
+      - Spring Boot
+      - microservices
+  full_stack_developer:
+    display_name: Full Stack Developer
+    target_level: entry
+    description: Jobs for Full Stack Developer position
+    queries:
+      naukri:
+      - full stack developer
+      - full stack
+      internshala:
+      - full stack
+      unstop:
+      - full stack developer
+      shine:
+      - full stack developer
+      timesjobs:
+      - full stack developer
+      linkedin: &id007
+      - full stack developer
+      - full stack
+      foundit: *id007
+      talentd: *id007
+      wellfound: *id007
+      placementdrive: *id007
+      jobfound: *id007
+      job4freshers: *id007
+    target_keywords:
+    - Full Stack
+    - Frontend
+    - Backend
+    - Database
+    - React
+    - Node.js
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 3
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    - On-Site India
+    - Bangalore
+    - Pune
+    - Hyderabad
+    - Remote India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Full Stack
+      medium:
+      - Frontend
+      - Backend
+  frontend_developer:
+    display_name: Frontend Developer
+    target_level: entry
+    description: Jobs for Frontend Developer position
+    queries:
+      naukri:
+      - frontend developer
+      - react developer
+      internshala:
+      - frontend
+      unstop:
+      - frontend developer
+      shine:
+      - frontend developer
+      timesjobs:
+      - frontend developer
+      linkedin: &id008
+      - frontend developer
+      - react developer
+      foundit: *id008
+      talentd: *id008
+      wellfound: *id008
+      placementdrive: *id008
+      jobfound: *id008
+      job4freshers: *id008
+    target_keywords:
+    - React
+    - Vue
+    - Angular
+    - JavaScript
+    - CSS
+    - frontend
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - React
+      medium:
+      - Vue
+      - Angular
+  backend_developer:
+    display_name: Backend Developer
+    target_level: entry
+    description: Jobs for Backend Developer position
+    queries:
+      naukri:
+      - backend developer
+      - backend
+      internshala:
+      - backend
+      unstop:
+      - backend developer
+      shine:
+      - backend developer
+      timesjobs:
+      - backend developer
+      linkedin: &id009
+      - backend developer
+      - backend
+      foundit: *id009
+      talentd: *id009
+      wellfound: *id009
+      placementdrive: *id009
+      jobfound: *id009
+      job4freshers: *id009
+    target_keywords:
+    - Backend
+    - Node.js
+    - Python
+    - API
+    - database
+    - server
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Backend
+      medium:
+      - Node.js
+      - Python
+  mobile_developer:
+    display_name: Mobile Developer
+    target_level: entry
+    description: Jobs for Mobile Developer position
+    queries:
+      naukri:
+      - mobile developer
+      internshala:
+      - mobile developer
+      unstop:
+      - mobile developer
+      shine:
+      - mobile developer
+      timesjobs:
+      - mobile developer
+      linkedin: &id010
+      - mobile developer
+      foundit: *id010
+      talentd: *id010
+      wellfound: *id010
+      placementdrive: *id010
+      jobfound: *id010
+      job4freshers: *id010
+    target_keywords:
+    - Mobile
+    - iOS
+    - Android
+    - React Native
+    - Flutter
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Mobile
+      medium:
+      - iOS
+      - Android
+  typescript_developer:
+    display_name: TypeScript Developer
+    target_level: entry
+    description: Jobs for TypeScript Developer position
+    queries:
+      naukri:
+      - typescript developer
+      internshala:
+      - typescript
+      unstop:
+      - typescript developer
+      shine:
+      - typescript developer
+      timesjobs:
+      - typescript developer
+      linkedin: &id011
+      - typescript developer
+      foundit: *id011
+      talentd: *id011
+      wellfound: *id011
+      placementdrive: *id011
+      jobfound: *id011
+      job4freshers: *id011
+    target_keywords:
+    - TypeScript
+    - JavaScript
+    - React
+    - Node.js
+    - type-safe
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - TypeScript
+      medium:
+      - JavaScript
+      - React
+  go_developer:
+    display_name: Go Developer
+    target_level: mid
+    description: Jobs for Go Developer position
+    queries:
+      naukri:
+      - go developer
+      - golang
+      internshala:
+      - go
+      unstop:
+      - go developer
+      shine:
+      - go developer
+      timesjobs:
+      - go developer
+      linkedin: &id012
+      - go developer
+      - golang
+      foundit: *id012
+      talentd: *id012
+      wellfound: *id012
+      placementdrive: *id012
+      jobfound: *id012
+      job4freshers: *id012
+    target_keywords:
+    - Go
+    - Golang
+    - microservices
+    - systems programming
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 1
+      max_years: 5
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Go
+      medium:
+      - Golang
+      - microservices
+  c++_developer:
+    display_name: C++ Developer
+    target_level: entry
+    description: Jobs for C++ Developer position
+    queries:
+      naukri:
+      - c++ developer
+      internshala:
+      - c++
+      unstop:
+      - c++ developer
+      shine:
+      - c++ developer
+      timesjobs:
+      - c++ developer
+      linkedin: &id013
+      - c++ developer
+      foundit: *id013
+      talentd: *id013
+      wellfound: *id013
+      placementdrive: *id013
+      jobfound: *id013
+      job4freshers: *id013
+    target_keywords:
+    - C++
+    - systems programming
+    - performance
+    - algorithms
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - C++
+      medium:
+      - systems programming
+      - performance
+  c#_developer:
+    display_name: C# Developer
+    target_level: entry
+    description: Jobs for C# Developer position
+    queries:
+      naukri:
+      - c# developer
+      internshala:
+      - c#
+      - .net
+      unstop:
+      - c# developer
+      shine:
+      - c# developer
+      timesjobs:
+      - c# developer
+      linkedin: &id014
+      - c# developer
+      foundit: *id014
+      talentd: *id014
+      wellfound: *id014
+      placementdrive: *id014
+      jobfound: *id014
+      job4freshers: *id014
+    target_keywords:
+    - C#
+    - .NET
+    - Windows
+    - game development
+    - ASP.NET
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - C#
+      medium:
+      - .NET
+      - Windows
+  devops_engineer:
+    display_name: DevOps Engineer
+    target_level: entry
+    description: Jobs for DevOps Engineer position
+    queries:
+      naukri:
+      - devops engineer
+      - devops
+      internshala:
+      - devops
+      unstop:
+      - devops engineer
+      shine:
+      - devops engineer
+      timesjobs:
+      - devops engineer
+      linkedin: &id015
+      - devops engineer
+      - devops
+      foundit: *id015
+      talentd: *id015
+      wellfound: *id015
+      placementdrive: *id015
+      jobfound: *id015
+      job4freshers: *id015
+    target_keywords:
+    - DevOps
+    - Docker
+    - Kubernetes
+    - CI/CD
+    - Jenkins
+    - GitLab
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 3
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - DevOps
+      medium:
+      - Docker
+      - Kubernetes
+  cloud_engineer:
+    display_name: Cloud Engineer
+    target_level: entry
+    description: Jobs for Cloud Engineer position
+    queries:
+      naukri:
+      - cloud engineer
+      - cloud
+      internshala:
+      - cloud
+      unstop:
+      - cloud engineer
+      shine:
+      - cloud engineer
+      timesjobs:
+      - cloud engineer
+      linkedin: &id016
+      - cloud engineer
+      - cloud
+      foundit: *id016
+      talentd: *id016
+      wellfound: *id016
+      placementdrive: *id016
+      jobfound: *id016
+      job4freshers: *id016
+    target_keywords:
+    - Cloud
+    - AWS
+    - Azure
+    - GCP
+    - cloud infrastructure
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 3
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Cloud
+      medium:
+      - AWS
+      - Azure
+  database_engineer:
+    display_name: Database Engineer
+    target_level: entry
+    description: Jobs for Database Engineer position
+    queries:
+      naukri:
+      - database engineer
+      internshala:
+      - database
+      unstop:
+      - database engineer
+      shine:
+      - database engineer
+      timesjobs:
+      - database engineer
+      linkedin: &id017
+      - database engineer
+      foundit: *id017
+      talentd: *id017
+      wellfound: *id017
+      placementdrive: *id017
+      jobfound: *id017
+      job4freshers: *id017
+    target_keywords:
+    - Database
+    - PostgreSQL
+    - MongoDB
+    - design
+    - optimization
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Database
+      medium:
+      - PostgreSQL
+      - MongoDB
+  machine_learning_engineer:
+    display_name: Machine Learning Engineer
+    target_level: entry
+    description: Jobs for ML Engineer
+    queries:
+      naukri:
+      - machine learning
+      internshala:
+      - machine learning
+      linkedin: &id018
+      - machine learning
+      foundit: *id018
+      talentd: *id018
+      wellfound: *id018
+      placementdrive: *id018
+      jobfound: *id018
+      job4freshers: *id018
+    target_keywords:
+    - ML
+    - Python
+    - AI
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - ML
+      - AI
+      medium:
+      - Python
+  mern_stack_developer:
+    display_name: Machine Learning Engineer
+    target_level: entry
+    description: Jobs for Machine Learning Engineer position
+    queries:
+      naukri:
+      - machine learning engineer
+      - ml engineer
+      internshala:
+      - machine learning
+      unstop:
+      - machine learning engineer
+      shine:
+      - machine learning engineer
+      timesjobs:
+      - machine learning engineer
+      linkedin: &id019
+      - machine learning engineer
+      - ml engineer
+      foundit: *id019
+      talentd: *id019
+      wellfound: *id019
+      placementdrive: *id019
+      jobfound: *id019
+      job4freshers: *id019
+    target_keywords:
+    - Machine Learning
+    - Python
+    - TensorFlow
+    - PyTorch
+    - models
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Machine Learning
+      medium:
+      - Python
+      - TensorFlow
+  data_scientist:
+    display_name: Data Scientist
+    target_level: entry
+    description: Jobs for Data Scientist position
+    queries:
+      naukri:
+      - data scientist
+      - data science
+      internshala:
+      - data science
+      unstop:
+      - data scientist
+      shine:
+      - data scientist
+      timesjobs:
+      - data scientist
+      linkedin: &id020
+      - data scientist
+      - data science
+      foundit: *id020
+      talentd: *id020
+      wellfound: *id020
+      placementdrive: *id020
+      jobfound: *id020
+      job4freshers: *id020
+    target_keywords:
+    - Data Science
+    - Python
+    - ML
+    - statistics
+    - analysis
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Data Science
+      medium:
+      - Python
+      - ML
+  ai_engineer:
+    display_name: AI Engineer
+    target_level: mid
+    description: Jobs for AI Engineer position
+    queries:
+      naukri:
+      - ai engineer
+      - artificial intelligence
+      internshala:
+      - ai
+      unstop:
+      - ai engineer
+      shine:
+      - ai engineer
+      timesjobs:
+      - ai engineer
+      linkedin: &id021
+      - ai engineer
+      - artificial intelligence
+      foundit: *id021
+      talentd: *id021
+      wellfound: *id021
+      placementdrive: *id021
+      jobfound: *id021
+      job4freshers: *id021
+    target_keywords:
+    - AI
+    - Artificial Intelligence
+    - deep learning
+    - neural networks
+    - LLM
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 1
+      max_years: 5
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - AI
+      medium:
+      - Artificial Intelligence
+      - deep learning
+  qa_engineer:
+    display_name: QA Engineer
+    target_level: entry
+    description: Jobs for QA Engineer position
+    queries:
+      naukri:
+      - qa engineer
+      - quality assurance
+      internshala:
+      - qa
+      - testing
+      unstop:
+      - qa engineer
+      shine:
+      - qa engineer
+      timesjobs:
+      - qa engineer
+      linkedin: &id022
+      - qa engineer
+      - quality assurance
+      foundit: *id022
+      talentd: *id022
+      wellfound: *id022
+      placementdrive: *id022
+      jobfound: *id022
+      job4freshers: *id022
+    target_keywords:
+    - QA
+    - testing
+    - test automation
+    - bug
+    - quality assurance
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - QA
+      medium:
+      - testing
+      - test automation
+  automation_tester:
+    display_name: Automation Tester
+    target_level: entry
+    description: Jobs for Automation Tester position
+    queries:
+      naukri:
+      - automation tester
+      - test automation
+      internshala:
+      - automation testing
+      unstop:
+      - automation tester
+      shine:
+      - automation tester
+      timesjobs:
+      - automation tester
+      linkedin: &id023
+      - automation tester
+      - test automation
+      foundit: *id023
+      talentd: *id023
+      wellfound: *id023
+      placementdrive: *id023
+      jobfound: *id023
+      job4freshers: *id023
+    target_keywords:
+    - Automation
+    - Selenium
+    - test automation
+    - scripting
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Automation
+      medium:
+      - Selenium
+      - test automation
+  product_manager:
+    display_name: Product Manager
+    target_level: mid
+    description: Jobs for Product Manager position
+    queries:
+      naukri:
+      - product manager
+      - pm
+      internshala:
+      - product manager
+      unstop:
+      - product manager
+      shine:
+      - product manager
+      timesjobs:
+      - product manager
+      linkedin: &id024
+      - product manager
+      - pm
+      foundit: *id024
+      talentd: *id024
+      wellfound: *id024
+      placementdrive: *id024
+      jobfound: *id024
+      job4freshers: *id024
+    target_keywords:
+    - Product Manager
+    - product strategy
+    - roadmap
+    - user research
+    scoring_weights:
+      title_match: 0.35
+      keyword_match: 0.3
+      company_fit: 0.2
+      internship_tag: 0.05
+      location: 0.1
+    experience_range:
+      min_years: 2
+      max_years: 6
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Product Manager
+      medium:
+      - product strategy
+      - roadmap
+  bi_analyst:
+    display_name: BI Analyst (Junior)
+    target_level: entry
+    description: Business Intelligence Analyst roles for freshers — dashboards, reporting,
+      data visualization
+    queries:
+      naukri:
+      - bi analyst
+      - business intelligence analyst
+      internshala:
+      - business intelligence
+      - bi analyst
+      free_portals:
+      - bi analyst fresher
+      job4freshers:
+      - bi analyst
+      linkedin: &id025
+      - bi analyst
+      - business intelligence analyst
+      foundit: *id025
+      talentd: *id025
+      wellfound: *id025
+      placementdrive: *id025
+      jobfound: *id025
+    target_keywords:
+    - Power BI
+    - Tableau
+    - SQL
+    - dashboards
+    - reporting
+    - data visualization
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - Remote
+    - India
+    - Bangalore
+    - Pune
+    - Hyderabad
+    - Chennai
+    - Mumbai
+    - Delhi
+    apply_threshold: 6.0
+    review_threshold: 4.5
+    boost_keywords:
+      high:
+      - Power BI
+      - Tableau
+      - BI
+      medium:
+      - dashboards
+      - SQL
+  mis_analyst:
+    display_name: MIS Analyst (Fresher)
+    target_level: entry
+    description: MIS / Reporting Analyst roles — Excel, data management, business
+      reporting
+    queries:
+      naukri:
+      - mis analyst
+      - mis executive
+      internshala:
+      - mis
+      - reporting analyst
+      free_portals:
+      - mis analyst fresher
+      linkedin: &id026
+      - mis analyst
+      - mis executive
+      foundit: *id026
+      talentd: *id026
+      wellfound: *id026
+      placementdrive: *id026
+      jobfound: *id026
+      job4freshers: *id026
+    target_keywords:
+    - MIS
+    - Excel
+    - reporting
+    - data management
+    - VBA
+    - pivot tables
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Bangalore
+    - Pune
+    - Delhi
+    - Mumbai
+    apply_threshold: 6.0
+    review_threshold: 4.5
+    boost_keywords:
+      high:
+      - MIS
+      - Excel
+      medium:
+      - reporting
+  marketing_insights_analyst:
+    display_name: Marketing / Customer Insights Analyst
+    target_level: entry
+    description: Marketing analytics, customer insights, and market research roles
+    queries:
+      naukri:
+      - marketing analyst
+      - customer insights analyst
+      internshala:
+      - marketing analytics
+      - market research
+      free_portals:
+      - marketing analyst fresher
+      linkedin: &id027
+      - marketing analyst
+      - customer insights analyst
+      foundit: *id027
+      talentd: *id027
+      wellfound: *id027
+      placementdrive: *id027
+      jobfound: *id027
+      job4freshers: *id027
+    target_keywords:
+    - marketing analytics
+    - customer insights
+    - market research
+    - data analysis
+    - Google Analytics
+    - Excel
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    - Bangalore
+    - Mumbai
+    - Delhi
+    apply_threshold: 6.0
+    review_threshold: 4.5
+    boost_keywords:
+      high:
+      - marketing analytics
+      - market research
+      medium:
+      - Google Analytics
+      - customer insights
+  product_data_analyst:
+    display_name: Product Data Analyst
+    target_level: entry
+    description: Product analytics roles — user behavior, A/B testing, product metrics
+    queries:
+      naukri:
+      - product analyst
+      - product data analyst
+      internshala:
+      - product analytics
+      free_portals:
+      - product analyst fresher
+      linkedin: &id028
+      - product analyst
+      - product data analyst
+      foundit: *id028
+      talentd: *id028
+      wellfound: *id028
+      placementdrive: *id028
+      jobfound: *id028
+      job4freshers: *id028
+    target_keywords:
+    - product analytics
+    - A/B testing
+    - user behavior
+    - SQL
+    - Python
+    - metrics
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    - Bangalore
+    - Pune
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - product analytics
+      - A/B testing
+      medium:
+      - SQL
+      - metrics
+  associate_business_analyst:
+    display_name: Associate Business Analyst (Fresher)
+    target_level: entry
+    description: Entry-level business analysis roles — requirements gathering, process
+      mapping
+    queries:
+      naukri:
+      - associate business analyst
+      - junior business analyst
+      - business analyst fresher
+      internshala:
+      - business analyst
+      - business analysis intern
+      free_portals:
+      - associate business analyst
+      job4freshers:
+      - business analyst fresher
+      linkedin: &id029
+      - associate business analyst
+      - junior business analyst
+      foundit: *id029
+      talentd: *id029
+      wellfound: *id029
+      placementdrive: *id029
+      jobfound: *id029
+    target_keywords:
+    - business analysis
+    - requirements
+    - stakeholder
+    - JIRA
+    - process mapping
+    - Agile
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Bangalore
+    - Pune
+    - Hyderabad
+    - Delhi
+    - Mumbai
+    - Chennai
+    apply_threshold: 6.0
+    review_threshold: 4.5
+    boost_keywords:
+      high:
+      - business analysis
+      - requirements
+      medium:
+      - stakeholder
+      - JIRA
+  mean_stack_developer:
+    display_name: MEAN Stack Developer
+    target_level: entry
+    description: MEAN Stack (MongoDB, Express, Angular, Node.js) developer roles
+    queries:
+      naukri:
+      - mean stack developer
+      - angular node developer
+      internshala:
+      - mean stack
+      - angular developer
+      free_portals:
+      - mean stack developer fresher
+      linkedin: &id030
+      - mean stack developer
+      - angular node developer
+      foundit: *id030
+      talentd: *id030
+      wellfound: *id030
+      placementdrive: *id030
+      jobfound: *id030
+      job4freshers: *id030
+    target_keywords:
+    - MEAN
+    - MongoDB
+    - Express
+    - Angular
+    - Node.js
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    - Bangalore
+    - Pune
+    - Hyderabad
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - MEAN
+      - Angular
+      - Node.js
+      medium:
+      - MongoDB
+      - Express
+  react_developer:
+    display_name: React Developer
+    target_level: entry
+    description: React.js / React Native frontend developer roles
+    queries:
+      naukri:
+      - react developer
+      - react js developer
+      internshala:
+      - react
+      - react js
+      free_portals:
+      - react developer fresher
+      job4freshers:
+      - react developer
+      linkedin: &id031
+      - react developer
+      - react js developer
+      foundit: *id031
+      talentd: *id031
+      wellfound: *id031
+      placementdrive: *id031
+      jobfound: *id031
+    target_keywords:
+    - React
+    - React.js
+    - Redux
+    - JavaScript
+    - TypeScript
+    - frontend
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    - Bangalore
+    - Pune
+    - Hyderabad
+    - Delhi
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - React
+      - React.js
+      medium:
+      - Redux
+      - JavaScript
+  node_developer:
+    display_name: Node.js Developer
+    target_level: entry
+    description: Node.js / Express backend developer roles
+    queries:
+      naukri:
+      - node js developer
+      - nodejs developer
+      internshala:
+      - node js
+      - nodejs
+      free_portals:
+      - node developer fresher
+      linkedin: &id032
+      - node js developer
+      - nodejs developer
+      foundit: *id032
+      talentd: *id032
+      wellfound: *id032
+      placementdrive: *id032
+      jobfound: *id032
+      job4freshers: *id032
+    target_keywords:
+    - Node.js
+    - Express
+    - REST API
+    - MongoDB
+    - JavaScript
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    - Bangalore
+    - Pune
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Node.js
+      - Express
+      medium:
+      - REST API
+      - MongoDB
+  django_developer:
+    display_name: Django / Python Web Developer
+    target_level: entry
+    description: Django / Flask Python web developer roles
+    queries:
+      naukri:
+      - django developer
+      - python web developer
+      internshala:
+      - django
+      - python web
+      free_portals:
+      - django developer fresher
+      linkedin: &id033
+      - django developer
+      - python web developer
+      foundit: *id033
+      talentd: *id033
+      wellfound: *id033
+      placementdrive: *id033
+      jobfound: *id033
+      job4freshers: *id033
+    target_keywords:
+    - Django
+    - Flask
+    - Python
+    - REST API
+    - PostgreSQL
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 2
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    - Bangalore
+    - Pune
+    - Hyderabad
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - Django
+      - Python
+      medium:
+      - Flask
+      - REST API
+  web_developer:
+    display_name: Web Developer (Fresher)
+    target_level: entry
+    description: General web development roles — HTML, CSS, JS, responsive design
+    queries:
+      naukri:
+      - web developer fresher
+      - web developer
+      internshala:
+      - web development
+      - web developer
+      free_portals:
+      - web developer fresher india
+      job4freshers:
+      - web developer
+      linkedin: &id034
+      - web developer fresher
+      - web developer
+      foundit: *id034
+      talentd: *id034
+      wellfound: *id034
+      placementdrive: *id034
+      jobfound: *id034
+    target_keywords:
+    - HTML
+    - CSS
+    - JavaScript
+    - responsive
+    - web development
+    - Bootstrap
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    - Bangalore
+    - Pune
+    - Delhi
+    - Mumbai
+    - Hyderabad
+    - Chennai
+    apply_threshold: 6.0
+    review_threshold: 4.5
+    boost_keywords:
+      high:
+      - web development
+      - JavaScript
+      medium:
+      - HTML
+      - CSS
+  ai_ml_intern:
+    display_name: AI / ML Intern
+    target_level: entry
+    description: AI and Machine Learning internship roles for 2026 freshers
+    queries:
+      naukri:
+      - ai intern
+      - ml intern
+      - machine learning intern
+      internshala:
+      - artificial intelligence
+      - machine learning
+      free_portals:
+      - ai ml intern india
+      job4freshers:
+      - ai intern
+      linkedin: &id035
+      - ai intern
+      - ml intern
+      foundit: *id035
+      talentd: *id035
+      wellfound: *id035
+      placementdrive: *id035
+      jobfound: *id035
+    target_keywords:
+    - AI
+    - ML
+    - machine learning
+    - deep learning
+    - Python
+    - TensorFlow
+    - NLP
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    - Bangalore
+    - Hyderabad
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - AI
+      - ML
+      - machine learning
+      medium:
+      - deep learning
+      - TensorFlow
+  data_engineering_intern:
+    display_name: Data Engineering Intern
+    target_level: entry
+    description: Data engineering and ETL pipeline internship roles
+    queries:
+      naukri:
+      - data engineering intern
+      - data engineer fresher
+      internshala:
+      - data engineering
+      - etl
+      free_portals:
+      - data engineer intern india
+      linkedin: &id036
+      - data engineering intern
+      - data engineer fresher
+      foundit: *id036
+      talentd: *id036
+      wellfound: *id036
+      placementdrive: *id036
+      jobfound: *id036
+      job4freshers: *id036
+    target_keywords:
+    - data engineering
+    - ETL
+    - SQL
+    - Python
+    - Spark
+    - data pipeline
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    - Bangalore
+    - Hyderabad
+    - Pune
+    apply_threshold: 6.5
+    review_threshold: 5.0
+    boost_keywords:
+      high:
+      - data engineering
+      - ETL
+      medium:
+      - SQL
+      - Spark
+  technical_content_writer:
+    display_name: Technical Content Writer
+    target_level: entry
+    description: Technical writing and documentation roles — API docs, blogs, knowledge
+      bases
+    queries:
+      naukri:
+      - technical content writer
+      - technical writer fresher
+      internshala:
+      - technical writing
+      - content writer
+      free_portals:
+      - technical writer fresher india
+      linkedin: &id037
+      - technical content writer
+      - technical writer fresher
+      foundit: *id037
+      talentd: *id037
+      wellfound: *id037
+      placementdrive: *id037
+      jobfound: *id037
+      job4freshers: *id037
+    target_keywords:
+    - technical writing
+    - documentation
+    - API docs
+    - content
+    - writing
+    - blog
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    apply_threshold: 6.0
+    review_threshold: 4.5
+    boost_keywords:
+      high:
+      - technical writing
+      - documentation
+      medium:
+      - API docs
+      - content
+  erp_consultant_fresher:
+    display_name: ERP Consultant (Fresher)
+    target_level: entry
+    description: SAP / Oracle ERP functional consultant roles for freshers
+    queries:
+      naukri:
+      - erp consultant fresher
+      - sap consultant fresher
+      - oracle consultant fresher
+      internshala:
+      - erp
+      - sap
+      free_portals:
+      - erp consultant fresher india
+      linkedin: &id038
+      - erp consultant fresher
+      - sap consultant fresher
+      foundit: *id038
+      talentd: *id038
+      wellfound: *id038
+      placementdrive: *id038
+      jobfound: *id038
+      job4freshers: *id038
+    target_keywords:
+    - ERP
+    - SAP
+    - Oracle
+    - functional consultant
+    - business process
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Bangalore
+    - Pune
+    - Hyderabad
+    - Chennai
+    apply_threshold: 6.0
+    review_threshold: 4.5
+    boost_keywords:
+      high:
+      - ERP
+      - SAP
+      medium:
+      - Oracle
+      - functional consultant
+  reporting_analyst:
+    display_name: Business / Reporting Analyst Intern
+    target_level: entry
+    description: Reporting analyst and business reporting intern roles
+    queries:
+      naukri:
+      - reporting analyst
+      - business reporting
+      internshala:
+      - reporting analyst
+      - business reporting
+      free_portals:
+      - reporting analyst fresher india
+      linkedin: &id039
+      - reporting analyst
+      - business reporting
+      foundit: *id039
+      talentd: *id039
+      wellfound: *id039
+      placementdrive: *id039
+      jobfound: *id039
+      job4freshers: *id039
+    target_keywords:
+    - reporting
+    - Excel
+    - SQL
+    - dashboards
+    - business intelligence
+    scoring_weights:
+      title_match: 0.4
+      keyword_match: 0.35
+      company_fit: 0.15
+      internship_tag: 0.05
+      location: 0.05
+    experience_range:
+      min_years: 0
+      max_years: 1
+      accept_undefined: true
+    preferred_locations:
+    - India
+    - Remote
+    - Bangalore
+    - Pune
+    - Delhi
+    - Mumbai
+    apply_threshold: 6.0
+    review_threshold: 4.5
+    boost_keywords:
+      high:
+      - reporting
+      - Excel
+      medium:
+      - SQL
+      - dashboards

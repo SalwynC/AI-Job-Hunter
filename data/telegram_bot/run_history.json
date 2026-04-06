@@ -1,0 +1,29 @@
+[
+  {
+    "id": "dc33e8f6",
+    "source": "test",
+    "status": "ok",
+    "attempts": 0,
+    "completed_at": "2026-03-22T18:19:47",
+    "saved_rows": 12,
+    "apply_now_rows": 3
+  },
+  {
+    "id": "17e71c7c",
+    "source": "telegram_command",
+    "status": "ok",
+    "attempts": 0,
+    "completed_at": "2026-03-25T22:19:05",
+    "saved_rows": 2118,
+    "apply_now_rows": 28
+  },
+  {
+    "id": "ee8565b5",
+    "source": "telegram_command",
+    "status": "ok",
+    "attempts": 0,
+    "completed_at": "2026-03-25T22:51:35",
+    "saved_rows": 2135,
+    "apply_now_rows": 32
+  }
+]

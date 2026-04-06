@@ -1,0 +1,50 @@
+2026-04-04 01:18:03,629 - __main__ - INFO - Starting Continuous Scheduler (interval: 5min)
+2026-04-04 01:18:03,629 - __main__ - INFO - Max retries: 3, Max jobs/cycle: 40
+2026-04-04 01:18:03,630 - apscheduler.scheduler - INFO - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-04 01:18:03,630 - __main__ - INFO - Scheduled: Job scraping every 5 minutes (IST)
+2026-04-04 01:18:03,631 - apscheduler.scheduler - INFO - Added job "Continuous Job Scraping" to job store "default"
+2026-04-04 01:18:03,631 - apscheduler.scheduler - INFO - Scheduler started
+2026-04-04 01:18:03,631 - __main__ - INFO - Scheduler running continuously...
+2026-04-04 01:18:03,631 - apscheduler.executors.default - INFO - Running job "Continuous Job Scraping (trigger: interval[0:05:00], next run at: 2026-04-04 01:23:03 IST)" (scheduled at 2026-04-04 01:18:03.630704+05:30)
+2026-04-04 01:18:03,631 - __main__ - INFO - 
+======================================================================
+2026-04-04 01:18:03,631 - __main__ - INFO - SCRAPING CYCLE #1 - 2026-04-04 01:18:03 IST
+2026-04-04 01:18:03,631 - __main__ - INFO - ======================================================================
+2026-04-04 01:18:03,738 - scrapers.telegram_channel_scraper - INFO - ✅ Loaded 17 Telegram channels from env
+2026-04-04 01:18:03,956 - __main__ - INFO - PHASE 1: Scraping websites...
+2026-04-04 01:18:03,956 - scrapers.naukri_scraper - INFO - 🔍 Scraping Naukri.com jobs...
+2026-04-04 01:18:29,093 - scrapers.naukri_scraper - INFO - Naukri: All methods exhausted, returning empty
+2026-04-04 01:18:29,094 - __main__ - INFO -   Naukri: 0 jobs
+2026-04-04 01:18:29,095 - scrapers.internshala_scraper - INFO - 🔍 Scraping Internshala internships...
+2026-04-04 01:18:31,084 - __main__ - INFO -   Internshala: 0 jobs
+2026-04-04 01:18:31,084 - scrapers.unstop_scraper - INFO - 🔍 Scraping Unstop opportunities...
+2026-04-04 01:18:31,085 - scrapers.unstop_scraper - INFO - Attempting Unstop API...
+2026-04-04 01:18:33,921 - scrapers.unstop_scraper - INFO - Attempting Unstop HTML scraping...
+2026-04-04 01:18:35,252 - scrapers.unstop_scraper - INFO - ✅ Found 0 opportunities from Unstop HTML
+2026-04-04 01:18:35,253 - __main__ - INFO -   Unstop: 0 jobs
+2026-04-04 01:18:35,253 - scrapers.shine_scraper - INFO - 🔍 Scraping Shine.com jobs...
+2026-04-04 01:18:37,748 - scrapers.shine_scraper - INFO - ✅ Shine.com: Found 0 REAL jobs
+2026-04-04 01:18:37,749 - __main__ - INFO -   Shine: 0 jobs
+2026-04-04 01:18:37,749 - scrapers.timesjobs_scraper - INFO - 🔍 Scraping TimesJobs.com jobs...
+2026-04-04 01:18:39,060 - scrapers.timesjobs_scraper - INFO - ✅ TimesJobs: Found 0 REAL jobs
+2026-04-04 01:18:39,060 - __main__ - INFO -   TimesJobs: 0 jobs
+2026-04-04 01:18:39,061 - __main__ - INFO - Website jobs total: 0
+2026-04-04 01:18:39,063 - __main__ - INFO - PHASE 2: Scraping Telegram channels...
+2026-04-04 01:18:39,064 - __main__ - WARNING - Telegram scraping failed: cannot access local variable 'os' where it is not associated with a value
+2026-04-04 01:18:39,064 - __main__ - INFO - PHASE 3: Merging and deduplicating...
+2026-04-04 01:18:39,064 - scrapers.job_processor - INFO - 🔄 Deduplication: 0 → 0 unique, 0 duplicates
+2026-04-04 01:18:39,065 - __main__ - INFO - Unique jobs: 0, Total before dedup: 0
+2026-04-04 01:18:39,065 - __main__ - INFO - PHASE 4: Validating jobs...
+2026-04-04 01:18:39,065 - scrapers.job_processor - INFO - ✅ Validation: 0 → 0 valid jobs
+2026-04-04 01:18:39,065 - __main__ - INFO - Valid jobs: 0, Invalid: 0
+2026-04-04 01:18:39,065 - __main__ - INFO - PHASE 5: Saving to storage...
+2026-04-04 01:18:39,065 - scrapers.job_processor - WARNING - ⚠️ No jobs to save to data_storage/jobs_master_20260404_011839.csv
+2026-04-04 01:18:39,065 - __main__ - INFO - Saved to CSV
+2026-04-04 01:18:39,065 - __main__ - INFO - CYCLE COMPLETE - Next in 5 minutes
+2026-04-04 01:18:39,065 - __main__ - INFO - ======================================================================
+2026-04-04 01:18:39,065 - apscheduler.executors.default - INFO - Job "Continuous Job Scraping (trigger: interval[0:05:00], next run at: 2026-04-04 01:23:03 IST)" executed successfully
+2026-04-04 01:19:02,323 - __main__ - INFO - 
+Shutdown signal received
+2026-04-04 01:19:02,325 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-04-04 01:19:02,326 - __main__ - INFO - Scheduler stopped
+2026-04-04 01:19:02,326 - __main__ - INFO - Goodbye!

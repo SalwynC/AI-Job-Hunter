@@ -1,0 +1,9 @@
+{
+  "role": "data_analyst",
+  "run_profile": "hourly",
+  "job_window": "2d",
+  "started_at": "2026-04-06T04:20:08.985493Z",
+  "job_count": 22,
+  "output_path": "data/data_analyst/jobs.csv",
+  "timestamp": "2026-04-06T04:20:08.985526Z"
+}

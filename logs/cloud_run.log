@@ -1,0 +1,138 @@
+2026-04-03 22:43:43,927 - __main__ - INFO - ============================================================
+2026-04-03 22:43:43,927 - __main__ - INFO - 🤖 Starting AI Job Hunter - Cloud Mode
+2026-04-03 22:43:43,927 - __main__ - INFO - ⏰ Time: 2026-04-03 22:43:43.927501
+2026-04-03 22:43:43,927 - __main__ - INFO - 📍 Environment: CLOUD
+2026-04-03 22:43:43,927 - __main__ - INFO - ============================================================
+2026-04-03 22:43:43,927 - __main__ - INFO - ✅ All environment variables verified
+2026-04-03 22:43:44,069 - __main__ - ERROR - ❌ Cannot import job_scraper_3hr: cannot import name 'run_scraper_cycle' from 'job_scraper_3hr' (/Users/apple/Desktop/SalwynFolder/ai-job-hunter/ai-job-automation/job_scraper_3hr.py)
+2026-04-03 22:55:58,508 - __main__ - INFO - ============================================================
+2026-04-03 22:55:58,508 - __main__ - INFO - 🤖 Starting AI Job Hunter - Cloud Mode
+2026-04-03 22:55:58,508 - __main__ - INFO - ⏰ Time: 2026-04-03 22:55:58.508173
+2026-04-03 22:55:58,508 - __main__ - INFO - 📍 Environment: CLOUD
+2026-04-03 22:55:58,508 - __main__ - INFO - ============================================================
+2026-04-03 22:55:58,508 - __main__ - INFO - ✅ All environment variables verified
+2026-04-03 22:55:58,709 - scrapers.telegram_channel_scraper - INFO - ✅ Loaded 17 Telegram channels from env
+2026-04-03 22:55:58,709 - __main__ - INFO - 📍 Starting job scraper cycle...
+2026-04-03 22:55:58,743 - scrapers.naukri_scraper - INFO - 🔍 Scraping Naukri.com jobs...
+2026-04-03 22:56:20,939 - scrapers.naukri_scraper - INFO - Naukri: All methods exhausted, returning empty
+2026-04-03 22:56:20,940 - scrapers.common - WARNING - ⚠️ No jobs returned from naukri; fallback generation disabled
+2026-04-03 22:56:22,135 - scrapers.internshala_scraper - INFO - 🔍 Scraping Internshala internships...
+2026-04-03 22:56:23,833 - scrapers.common - WARNING - ⚠️ No jobs returned from internshala; fallback generation disabled
+2026-04-03 22:56:24,554 - scrapers.unstop_scraper - INFO - 🔍 Scraping Unstop opportunities...
+2026-04-03 22:56:24,554 - scrapers.unstop_scraper - INFO - Attempting Unstop API...
+2026-04-03 22:56:28,021 - scrapers.unstop_scraper - INFO - Attempting Unstop HTML scraping...
+2026-04-03 22:56:29,943 - scrapers.unstop_scraper - INFO - ✅ Found 0 opportunities from Unstop HTML
+2026-04-03 22:56:29,944 - scrapers.common - WARNING - ⚠️ No jobs returned from unstop; fallback generation disabled
+2026-04-03 22:56:31,399 - scrapers.shine_scraper - INFO - 🔍 Scraping Shine.com jobs...
+2026-04-03 22:56:35,922 - scrapers.shine_scraper - INFO - ✅ Shine.com: Found 0 REAL jobs
+2026-04-03 22:56:35,923 - scrapers.common - WARNING - ⚠️ No jobs returned from shine; fallback generation disabled
+2026-04-03 22:56:37,329 - scrapers.timesjobs_scraper - INFO - 🔍 Scraping TimesJobs.com jobs...
+2026-04-03 22:56:41,200 - scrapers.timesjobs_scraper - INFO - ✅ TimesJobs: Found 0 REAL jobs
+2026-04-03 22:56:41,202 - scrapers.common - WARNING - ⚠️ No jobs returned from timesjobs; fallback generation disabled
+2026-04-03 22:56:42,520 - __main__ - INFO - ✅ Scraping cycle complete!
+2026-04-03 22:56:42,521 - __main__ - INFO - 📊 Total jobs processed: 0
+2026-04-03 22:56:42,521 - __main__ - INFO - ⏱️  Cycle took 44.0 seconds
+2026-04-03 22:56:42,521 - __main__ - INFO - ============================================================
+2026-04-03 22:56:42,521 - __main__ - INFO - ✅ CYCLE SUCCESSFUL - Ready for next execution
+2026-04-03 22:56:42,521 - __main__ - INFO - ============================================================
+2026-04-03 23:17:43,794 - __main__ - INFO - ============================================================
+2026-04-03 23:17:43,794 - __main__ - INFO - 🤖 Starting AI Job Hunter - Cloud Mode
+2026-04-03 23:17:43,794 - __main__ - INFO - ⏰ Time: 2026-04-03 23:17:43.794136
+2026-04-03 23:17:43,794 - __main__ - INFO - 📍 Environment: CLOUD
+2026-04-03 23:17:43,794 - __main__ - INFO - ============================================================
+2026-04-03 23:17:43,794 - __main__ - INFO - ✅ All environment variables verified
+2026-04-03 23:17:43,982 - scrapers.telegram_channel_scraper - INFO - ✅ Loaded 17 Telegram channels from env
+2026-04-03 23:17:43,982 - __main__ - INFO - 📍 Starting job scraper cycle...
+2026-04-03 23:17:44,014 - scrapers.naukri_scraper - INFO - 🔍 Scraping Naukri.com jobs...
+2026-04-03 23:18:07,098 - scrapers.naukri_scraper - INFO - Naukri: All methods exhausted, returning empty
+2026-04-03 23:18:07,099 - scrapers.common - WARNING - ⚠️ No jobs returned from naukri; fallback generation disabled
+2026-04-03 23:18:07,699 - scrapers.internshala_scraper - INFO - 🔍 Scraping Internshala internships...
+2026-04-03 23:18:08,901 - scrapers.common - WARNING - ⚠️ No jobs returned from internshala; fallback generation disabled
+2026-04-03 23:18:10,325 - scrapers.unstop_scraper - INFO - 🔍 Scraping Unstop opportunities...
+2026-04-03 23:18:10,326 - scrapers.unstop_scraper - INFO - Attempting Unstop API...
+2026-04-03 23:18:12,996 - scrapers.unstop_scraper - INFO - Attempting Unstop HTML scraping...
+2026-04-03 23:18:14,724 - scrapers.unstop_scraper - INFO - ✅ Found 0 opportunities from Unstop HTML
+2026-04-03 23:18:14,726 - scrapers.common - WARNING - ⚠️ No jobs returned from unstop; fallback generation disabled
+2026-04-03 23:18:16,159 - scrapers.shine_scraper - INFO - 🔍 Scraping Shine.com jobs...
+2026-04-03 23:18:20,265 - scrapers.shine_scraper - INFO - ✅ Shine.com: Found 0 REAL jobs
+2026-04-03 23:18:20,266 - scrapers.common - WARNING - ⚠️ No jobs returned from shine; fallback generation disabled
+2026-04-03 23:18:20,992 - scrapers.timesjobs_scraper - INFO - 🔍 Scraping TimesJobs.com jobs...
+2026-04-03 23:18:23,603 - scrapers.timesjobs_scraper - INFO - ✅ TimesJobs: Found 0 REAL jobs
+2026-04-03 23:18:23,605 - scrapers.common - WARNING - ⚠️ No jobs returned from timesjobs; fallback generation disabled
+2026-04-03 23:18:24,400 - __main__ - INFO - ✅ Scraping cycle complete!
+2026-04-03 23:18:24,400 - __main__ - INFO - 📊 Total jobs processed: 0
+2026-04-03 23:18:24,400 - __main__ - INFO - ⏱️  Cycle took 40.6 seconds
+2026-04-03 23:18:24,401 - __main__ - INFO - ============================================================
+2026-04-03 23:18:24,401 - __main__ - INFO - ✅ CYCLE SUCCESSFUL - Ready for next execution
+2026-04-03 23:18:24,401 - __main__ - INFO - ============================================================
+2026-04-04 01:15:30,533 - __main__ - INFO - ============================================================
+2026-04-04 01:15:30,533 - __main__ - INFO - 🤖 Starting AI Job Hunter - Cloud Mode
+2026-04-04 01:15:30,533 - __main__ - INFO - ⏰ Time: 2026-04-04 01:15:30.533118
+2026-04-04 01:15:30,533 - __main__ - INFO - 📍 Environment: CLOUD
+2026-04-04 01:15:30,533 - __main__ - INFO - ============================================================
+2026-04-04 01:15:30,533 - __main__ - INFO - ✅ All environment variables verified
+2026-04-04 01:15:30,633 - scrapers.telegram_channel_scraper - INFO - ✅ Loaded 17 Telegram channels from env
+2026-04-04 01:15:30,633 - __main__ - INFO - 📍 Starting job scraper cycle...
+2026-04-04 01:15:30,656 - scrapers.naukri_scraper - INFO - 🔍 Scraping Naukri.com jobs...
+2026-04-04 01:15:54,516 - scrapers.naukri_scraper - INFO - Naukri: All methods exhausted, returning empty
+2026-04-04 01:15:54,518 - scrapers.common - WARNING - ⚠️ No jobs returned from naukri; fallback generation disabled
+2026-04-04 01:15:55,604 - scrapers.internshala_scraper - INFO - 🔍 Scraping Internshala internships...
+2026-04-04 01:15:57,111 - scrapers.common - WARNING - ⚠️ No jobs returned from internshala; fallback generation disabled
+2026-04-04 01:15:57,912 - scrapers.unstop_scraper - INFO - 🔍 Scraping Unstop opportunities...
+2026-04-04 01:15:57,912 - scrapers.unstop_scraper - INFO - Attempting Unstop API...
+2026-04-04 01:16:00,159 - scrapers.unstop_scraper - INFO - Attempting Unstop HTML scraping...
+2026-04-04 01:18:03,522 - __main__ - INFO - ============================================================
+2026-04-04 01:18:03,522 - __main__ - INFO - 🤖 Starting AI Job Hunter - Cloud Mode
+2026-04-04 01:18:03,523 - __main__ - INFO - ⏰ Time: 2026-04-04 01:18:03.522734
+2026-04-04 01:18:03,523 - __main__ - INFO - 📍 Environment: CLOUD
+2026-04-04 01:18:03,523 - __main__ - INFO - ============================================================
+2026-04-04 01:18:03,523 - __main__ - INFO - ✅ All environment variables verified
+2026-04-04 01:18:03,714 - scrapers.telegram_channel_scraper - INFO - ✅ Loaded 17 Telegram channels from env
+2026-04-04 01:18:03,714 - __main__ - INFO - 📍 Starting job scraper cycle...
+2026-04-04 01:18:03,748 - scrapers.naukri_scraper - INFO - 🔍 Scraping Naukri.com jobs...
+2026-04-04 01:18:27,873 - scrapers.naukri_scraper - INFO - Naukri: All methods exhausted, returning empty
+2026-04-04 01:18:27,875 - scrapers.common - WARNING - ⚠️ No jobs returned from naukri; fallback generation disabled
+2026-04-04 01:18:28,970 - scrapers.internshala_scraper - INFO - 🔍 Scraping Internshala internships...
+2026-04-04 01:18:30,071 - scrapers.common - WARNING - ⚠️ No jobs returned from internshala; fallback generation disabled
+2026-04-04 01:18:31,254 - scrapers.unstop_scraper - INFO - 🔍 Scraping Unstop opportunities...
+2026-04-04 01:18:31,254 - scrapers.unstop_scraper - INFO - Attempting Unstop API...
+2026-04-04 01:18:33,537 - scrapers.unstop_scraper - INFO - Attempting Unstop HTML scraping...
+2026-04-04 01:18:35,232 - scrapers.unstop_scraper - INFO - ✅ Found 0 opportunities from Unstop HTML
+2026-04-04 01:18:35,233 - scrapers.common - WARNING - ⚠️ No jobs returned from unstop; fallback generation disabled
+2026-04-04 01:18:36,585 - scrapers.shine_scraper - INFO - 🔍 Scraping Shine.com jobs...
+2026-04-04 01:18:39,683 - scrapers.shine_scraper - INFO - ✅ Shine.com: Found 0 REAL jobs
+2026-04-04 01:18:39,684 - scrapers.common - WARNING - ⚠️ No jobs returned from shine; fallback generation disabled
+2026-04-04 01:18:40,720 - scrapers.timesjobs_scraper - INFO - 🔍 Scraping TimesJobs.com jobs...
+2026-04-04 01:18:44,682 - scrapers.timesjobs_scraper - INFO - ✅ TimesJobs: Found 0 REAL jobs
+2026-04-04 01:18:44,683 - scrapers.common - WARNING - ⚠️ No jobs returned from timesjobs; fallback generation disabled
+2026-04-04 01:18:45,461 - __main__ - INFO - ✅ Scraping cycle complete!
+2026-04-04 01:18:45,463 - __main__ - INFO - 📊 Total jobs processed: 0
+2026-04-04 01:18:45,463 - __main__ - INFO - ⏱️  Cycle took 41.9 seconds
+2026-04-04 01:18:45,464 - __main__ - INFO - ============================================================
+2026-04-04 01:18:45,464 - __main__ - INFO - ✅ CYCLE SUCCESSFUL - Ready for next execution
+2026-04-04 01:18:45,464 - __main__ - INFO - ============================================================
+2026-04-04 06:09:49,464 - __main__ - INFO - ============================================================
+2026-04-04 06:09:49,464 - __main__ - INFO - 🤖 Starting AI Job Hunter - Cloud Mode
+2026-04-04 06:09:49,465 - __main__ - INFO - ⏰ Time: 2026-04-04 06:09:49.464607
+2026-04-04 06:09:49,465 - __main__ - INFO - 📍 Environment: CLOUD
+2026-04-04 06:09:49,465 - __main__ - INFO - ============================================================
+2026-04-04 06:09:49,465 - __main__ - INFO - ✅ All environment variables verified
+2026-04-04 06:09:49,567 - scrapers.telegram_channel_scraper - INFO - ✅ Loaded 17 Telegram channels from env
+2026-04-04 06:09:49,612 - telethon.crypto.aes - INFO - libssl detected, it will be used for encryption
+2026-04-04 06:09:49,633 - __main__ - INFO - 📍 Starting job scraper cycle...
+2026-04-04 06:09:49,657 - scrapers.free_portals_scraper - INFO - 🔍 Scraping free job portals...
+2026-04-04 06:09:55,052 - scrapers.free_portals_scraper - INFO - ✅ Found 0 Internshala jobs
+2026-04-04 06:09:57,326 - scrapers.free_portals_scraper - INFO - ✅ Found 0 Internshala jobs
+2026-04-04 06:10:03,582 - scrapers.free_portals_scraper - INFO - ✅ Found 49 RemoteOK jobs
+2026-04-04 06:10:03,585 - scrapers.free_portals_scraper - INFO - ✅ RemoteOK: 49 jobs
+2026-04-04 06:10:04,900 - scrapers.common - INFO - ✅ Collected 49 jobs from free_portals
+2026-04-04 06:10:05,743 - scrapers.naukri_scraper_v2_api - INFO - 🔍 Scraping Naukri for: data analyst
+2026-04-04 06:10:05,936 - scrapers.naukri_scraper_v2_api - WARNING - ⚠️ API returned status 404
+2026-04-04 06:10:09,243 - scrapers.naukri_scraper_v2_api - INFO - 🔍 Scraping Naukri for: business analyst
+2026-04-04 06:10:09,427 - scrapers.naukri_scraper_v2_api - WARNING - ⚠️ API returned status 404
+2026-04-04 06:10:11,570 - scrapers.common - WARNING - ⚠️ No jobs returned from naukri; fallback generation disabled
+2026-04-04 06:10:12,210 - scrapers.internshala_scraper - INFO - 🔍 Scraping Internshala internships...
+2026-04-04 06:10:13,727 - scrapers.common - WARNING - ⚠️ No jobs returned from internshala; fallback generation disabled
+2026-04-04 06:10:15,208 - scrapers.unstop_scraper - INFO - 🔍 Scraping Unstop opportunities...
+2026-04-04 06:10:15,209 - scrapers.unstop_scraper - INFO - Attempting Unstop API...
+2026-04-04 06:10:18,293 - scrapers.unstop_scraper - INFO - Attempting Unstop HTML scraping...

@@ -1,0 +1,11 @@
+source_label,status,collected,kept,kept_after_dedup,dedup_dropped,passed_filters,filtered_noise,filtered_role,filtered_role_family,filtered_location,filtered_fresher,filtered_stale,error
+LinkedIn,failed,0,0,0,0,0,0,0,0,0,0,0,timeout_120s
+Internshala,ok,1445,6,1445,0,6,124,1151,5,24,86,49,
+JobFound,ok,33,0,33,0,0,12,0,0,21,0,0,
+Talentd,ok,3,0,3,0,0,0,0,0,0,3,0,
+Unstop,ok,1,0,1,0,0,1,0,0,0,0,0,
+CareerPage,empty,0,0,0,0,0,0,0,0,0,0,0,
+Naukri,failed,0,0,0,0,0,0,0,0,0,0,0,timeout_120s
+Foundit,failed,0,0,0,0,0,0,0,0,0,0,0,timeout_120s
+Wellfound,empty,0,0,0,0,0,0,0,0,0,0,0,
+Telegram,empty,0,0,0,0,0,0,0,0,0,0,0,

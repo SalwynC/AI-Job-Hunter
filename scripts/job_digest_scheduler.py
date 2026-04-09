@@ -30,10 +30,9 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from config.role_loader import load_role_profile
 from scrapers.common import scrape_jobs_for_profile
-from scrapers.job_processor import process_jobs, merge_sources, deduplicate_jobs, filter_valid_jobs
-from google_sheets_integration import GoogleSheetsManager, SheetsReportGenerator
 from ai.claude_connector import build_claude_prompt
-from telegram_bot import AIJobHunterBot
+from integration.google_sheets_integration import GoogleSheetsManager, SheetsReportGenerator
+from integration.telegram_bot import AIJobHunterBot
 
 # Setup logging
 log_dir = Path('data/scheduler')

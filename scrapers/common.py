@@ -126,9 +126,12 @@ def scrape_timesjobs_jobs(profile: Dict[str, Any]) -> List[Dict[str, Any]]:
 
 
 def scrape_jobs_for_profile(profile: Dict[str, Any]) -> List[Dict[str, Any]]:
-    """Scrape jobs for the given role profile from non-LinkedIn sources."""
+    """Scrape jobs for the given role profile from non-LinkedIn sources in parallel."""
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    
     queries = profile.get("queries", {})
     all_jobs: List[Dict[str, Any]] = []
+    allow_fallback_jobs = os.getenv("ALLOW_FALLBACK_JOBS", "0") == "1"
 
     source_handlers = {
         "naukri": scrape_naukri_jobs,
@@ -146,12 +149,7 @@ def scrape_jobs_for_profile(profile: Dict[str, Any]) -> List[Dict[str, Any]]:
         "jobfound": scrape_jobfound_jobs,
     }
 
-    allow_fallback_jobs = os.getenv("ALLOW_FALLBACK_JOBS", "0") == "1"
-
-    for source, query_list in queries.items():
-        if not query_list:
-            continue
-
+    def fetch_source(source, query_list):
         try:
             if source in source_handlers:
                 source_jobs = source_handlers[source](profile)
@@ -159,24 +157,36 @@ def scrape_jobs_for_profile(profile: Dict[str, Any]) -> List[Dict[str, Any]]:
                 source_jobs = generate_realistic_jobs(query_list, profile)
 
             source_jobs = [normalize_job(job, source) for job in source_jobs]
-
-            if source_jobs:
-                logger.info(f"✅ Collected {len(source_jobs)} jobs from {source}")
-            else:
-                if allow_fallback_jobs:
-                    logger.warning(f"⚠️ No jobs returned from {source}; using fallback generation")
-                    source_jobs = [normalize_job(job, source) for job in generate_realistic_jobs(query_list, profile)]
-                else:
-                    logger.warning(f"⚠️ No jobs returned from {source}; fallback generation disabled")
-
-            all_jobs.extend(source_jobs)
-
+            
+            if not source_jobs and allow_fallback_jobs:
+                source_jobs = [normalize_job(job, source) for job in generate_realistic_jobs(query_list, profile)]
+            
+            return source, source_jobs
         except Exception as exc:
             logger.warning(f"Error collecting jobs from {source}: {exc}")
             if allow_fallback_jobs:
-                all_jobs.extend([normalize_job(job, source) for job in generate_realistic_jobs(query_list, profile)])
+                return source, [normalize_job(job, source) for job in generate_realistic_jobs(query_list, profile)]
+            return source, []
 
-        time.sleep(random.uniform(0.5, 1.5))
+    # Use ThreadPool to scrape 4 sources at a time (balancing speed vs rate limits)
+    max_workers = 4
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_source = {
+            executor.submit(fetch_source, source, q_list): source 
+            for source, q_list in queries.items() if q_list
+        }
+        
+        for future in as_completed(future_to_source):
+            source = future_to_source[future]
+            try:
+                name, source_jobs = future.result()
+                if source_jobs:
+                    logger.info(f"✅ Collected {len(source_jobs)} jobs from {name}")
+                all_jobs.extend(source_jobs)
+            except Exception as e:
+                logger.error(f"Thread error for {source}: {e}")
+
+    # Keep only entries with usable apply links.
 
     # Keep only entries with usable apply links.
     valid_jobs = [job for job in all_jobs if is_valid_apply_link(job.get("apply_link") or job.get("link"))]

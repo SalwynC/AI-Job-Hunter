@@ -25,6 +25,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from config.role_loader import load_role_profiles, validate_profile
 from automation.hourly_scraper import JobPipeline
+from database.engine import init_db
 
 # Setup logging
 log_dir = Path('data/ci')
@@ -39,6 +40,24 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger(__name__)
+
+def pre_flight_check():
+    """Verify all required environment variables are set."""
+    required = [
+        'DATABASE_URL',
+        'GEMINI_API_KEY',
+        'TELEGRAM_BOT_TOKEN',
+        'TELEGRAM_CHAT_ID'
+    ]
+    missing = [v for v in required if not os.getenv(v)]
+    
+    if missing:
+        logger.error(f"❌ CRITICAL ERROR: Missing environment variables: {', '.join(missing)}")
+        logger.error("Please add these to GitHub Secrets (Settings > Secrets and variables > Actions).")
+        return False
+    
+    logger.info("✅ Environment check passed.")
+    return True
 
 # Global flag for graceful shutdown
 _running = True
@@ -58,6 +77,7 @@ def run_pipeline_for_all_roles():
     job_window = os.getenv('JOB_WINDOW', '24h')
     
     results = {}
+    total_new_jobs = 0
 
     for role_key, profile_data in roles.items():
         if not _running:
@@ -80,6 +100,7 @@ def run_pipeline_for_all_roles():
             result = pipeline.run()
             results[role_key] = result
             new_jobs = result.get('new_jobs', 0)
+            total_new_jobs += new_jobs
             logger.info(f"✅ Completed role {role_key} - Found {new_jobs} new jobs.")
             
             # Send Telegram Alert if there are new jobs
@@ -118,7 +139,7 @@ def run_pipeline_for_all_roles():
         # Give a short backoff between scraping entire roles to avoid heavy bot detection!
         time.sleep(5)
 
-    return results
+    return results, total_new_jobs
 
 def main():
     parser = argparse.ArgumentParser(description='AI Job Hunter Master Orchestrator')
@@ -134,10 +155,29 @@ def main():
     logger.info("Initializing Master Job Pipeline...")
     logger.info("====================================")
 
+    # 1. Environment Check
+    if not pre_flight_check():
+        return 1
+
+    # 2. Initialize Database Tables
+    try:
+        logger.info("Initializing Database...")
+        init_db()
+        logger.info("✅ Database Ready.")
+    except Exception as db_err:
+        logger.error(f"❌ Database Initialization Failed: {db_err}")
+        return 1
+
     if args.once:
         logger.info("Running in Single-Execution Mode (--once)")
-        results = run_pipeline_for_all_roles()
-        logger.info(f"Single execution complete. Roles processed: {len(results)}")
+        results, total = run_pipeline_for_all_roles()
+        failed = [k for k, v in results.items() if 'error' in v or v.get('success') is False]
+        
+        logger.info(f"\nSummary: {len(results)} roles processed, {total} new jobs found.")
+        if failed:
+            logger.warning(f"⚠️ Some roles failed: {', '.join(failed)}")
+            return 1 # Mark as failed in CI if any role failed
+            
         return 0
         
     else:

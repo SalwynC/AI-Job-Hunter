@@ -25,8 +25,8 @@ import schedule
 import pandas as pd
 from telegram import Bot
 
-# Add project to path
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+# Add project root to path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from config.role_loader import load_role_profile
 from scrapers.common import scrape_jobs_for_profile

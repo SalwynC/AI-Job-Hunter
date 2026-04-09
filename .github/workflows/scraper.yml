@@ -9,8 +9,7 @@ on:
 
 jobs:
   scrape-jobs:
-    runs-on: ubuntu-latest
-    timeout-minutes: 45 # Allows ample time for playwright stealth navigation
+    timeout-minutes: 60 # Increased to 60 to accommodate 40+ job role cycles
     
     steps:
       - name: Checkout Repository

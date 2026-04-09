@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+PROJECT_DIR="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$PROJECT_DIR" || exit 1
 
 echo "════════════════════════════════════════════════════════════════════════════════"
@@ -10,8 +10,12 @@ echo ""
 
 # Load configuration
 echo "📋 Loading configuration..."
-source .env-analyst
-echo "✅ Configuration loaded"
+if [ -f .env-analyst ]; then
+    source .env-analyst
+    echo "✅ Configuration loaded"
+else
+    echo "⚠️  .env-analyst not found; proceeding with environment variables"
+fi
 echo ""
 
 # Check Python
@@ -28,14 +32,15 @@ echo ""
 echo "✅ Verifying modules..."
 python3 << 'PYEOF'
 import sys
-sys.path.insert(0, '.')
+import os
+sys.path.insert(0, os.getcwd())
 try:
     from automation.hourly_scraper import JobPipeline
-    from config.role_loader import load_role_profile
-    from scrapers.job_processor import process_jobs
+    from config.role_loader import load_role_profiles
+    from database.engine import init_db
     print("✅ All core modules verified")
 except Exception as e:
-    print(f"❌ Error: {e}")
+    print(f"❌ Error during module verification: {e}")
     sys.exit(1)
 PYEOF
 
@@ -45,16 +50,14 @@ echo "                    ✅ DEPLOYMENT CONFIGURATION COMPLETE"
 echo "════════════════════════════════════════════════════════════════════════════════"
 echo ""
 echo "📊 System Configuration:"
-echo "  • Telegram Bot Token: [CONFIGURED]"
-echo "  • Telegram Chat ID: [CONFIGURED]"
-echo "  • Schedule: Every 30 minutes"
-echo "  • Jobs per delivery: 25+"
-echo "  • Platforms: Naukri + Internshala + Unstop"
-echo "  • Features: ATS Scoring + Keywords + Buttons"
+echo "  • Status: Production Ready"
+echo "  • Pipeline: Autonomous Multi-Role Scraper"
+echo "  • Database: NeonDB / Local PostgreSQL"
+echo "  • Features: Auto-Init DB + Env Pre-flight Check"
 echo ""
-echo "🚀 Starting scheduler..."
+echo "🚀 Starting one-time run..."
 echo "════════════════════════════════════════════════════════════════════════════════"
 echo ""
 
-# Start one production-safe scheduler cycle
-python3 job_scraper_3hr.py --once
+# Start one production-safe autonomous cycle
+python3 main.py --once

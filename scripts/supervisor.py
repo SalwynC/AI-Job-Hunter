@@ -20,8 +20,8 @@ RESET = '\033[0m'
 BOLD = '\033[1m'
 
 PROJECT_DIR = Path(__file__).parent.parent
-PYTHON_SCRIPT = PROJECT_DIR / "job_scraper_3hr.py"
-PID_FILE = PROJECT_DIR / "data/runtime/scraper.pid"
+PYTHON_SCRIPT = PROJECT_DIR / "main.py"
+PID_FILE = PROJECT_DIR / "data/runtime/orchestrator.pid"
 LOG_FILE = PROJECT_DIR / "logs/supervisor.log"
 
 
